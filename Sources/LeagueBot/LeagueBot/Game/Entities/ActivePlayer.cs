@@ -100,9 +100,7 @@ namespace LeagueBot.Game.Entities
 
             InputHelper.PressKey("LCTRL");
             InputHelper.PressKey(key);
-            InputHelper.ReleaseKey("LCTRL");
-            InputHelper.ReleaseKey(key);
-            BotHelper.InputIdle();
+            
         }
         public int getLevel()
         {
