@@ -1,0 +1,19 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install .NET Core SDK
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: 3.1.302
+      - name: Build solution
+        run: dotnet build Sources/LeagueBot/LeagueBot.sln
