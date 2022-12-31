@@ -1,5 +1,5 @@
-
-<h1>Question concerning the project and its status ? Ask here : https://niddle-web.com/home?page=84410368 </h1>
+# CREDIT GOES TO https://github.com/Skinz3/League-of-Legends-Bot
+## I will be updating the bot to play better and work with the current patch
 
 <p align="center">
   
@@ -29,7 +29,7 @@
   
 
 ## Download 
-   * For non developpers, You can download LeagueBot updater [here](https://github.com/Skinz3/League-Of-Legends-BOT/raw/master/Updater.zip) to automatically get the binaries and automatically download updates ! 🤫
+   * WIP
 ## Installation
 
    Requirements :
@@ -38,21 +38,4 @@
    * A monitor with a **1920 * 1080** screen resolution.
    * .NET framework 4.7 installed on computer.
 
-   Before launch the bot, you need to follow setup instructions bellow : 
-
-   [Setup instructions](https://github.com/Skinz3/League-Of-Legends-BOT/wiki/How-to-make-it-work)
-
-
-# LeagueBot Wiki
-
-   FAQ, Api documentation... some good stuff :wink:
-
-   [Here is the wiki](https://github.com/Skinz3/League-Of-Legends-BOT/wiki) 
-
-# Author
-
-   * **Skinz** - https://github.com/Skinz3
-
-# Special Thanks
-
-   * **Arecki** - For his help with LCU Api.
+   (installation tutoral will be made soon)
