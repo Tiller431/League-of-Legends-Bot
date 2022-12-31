@@ -17,8 +17,6 @@ jobs:
           dotnet-version: 3.1.302
       - name: Restore NuGet packages
         run: nuget restore Sources/LeagueBot/LeagueBot.sln
-      - name: Create bin directory
-        run: mkdir bin
       - name: Copy patterns folder
         run: cp -r Patterns bin/
       - name: Build solution
