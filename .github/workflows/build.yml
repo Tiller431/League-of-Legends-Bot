@@ -15,5 +15,7 @@ jobs:
         uses: actions/setup-dotnet@v2
         with:
           dotnet-version: 3.1.302
+      - name: Restore NuGet packages
+        run: dotnet restore Sources/LeagueBot/LeagueBot.sln
       - name: Build solution
         run: msbuild Sources/LeagueBot/LeagueBot.sln
