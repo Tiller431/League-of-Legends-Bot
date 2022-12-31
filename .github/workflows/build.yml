@@ -7,13 +7,13 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
-      - name: Install Visual Studio Build Tools
-        uses: microsoft/setup-msbuild@v1.0.2
+      - name: Install .NET Core SDK
+        uses: actions/setup-dotnet@v2
         with:
-          vs-version: 2019
+          dotnet-version: 3.1.302
       - name: Build solution
         run: msbuild Sources/LeagueBot/LeagueBot.sln
