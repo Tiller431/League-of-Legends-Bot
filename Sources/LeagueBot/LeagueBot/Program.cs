@@ -44,6 +44,17 @@ namespace LeagueBot
         {
             Logger.Write("Enter a pattern filename, type 'help' for help.", MessageState.INFO);
 
+            // If there is a pattern arg in the command line, execute it.
+            if (Environment.GetCommandLineArgs().Length > 1)
+            {
+                string pattern = Environment.GetCommandLineArgs()[1];
+                if (PatternsManager.Contains(pattern))
+                {
+                    PatternsManager.Execute(pattern);
+                    return;
+                }
+            }
+
             string line = Console.ReadLine();
 
             if (line == "help" || !PatternsManager.Contains(line))

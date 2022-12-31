@@ -74,28 +74,34 @@ namespace LeagueBot.Game.Entities
 
         public void upgradeSpell(int indice) // <---- replace this by keybinding + league settings
         {
-            Point coords = new Point();
+            string key = null;
 
             switch (indice)
             {
+                // use keybinding instead of clicking
+                // ctrl + ability (Q,W,E,R)
                 case 1:
-                    coords = new Point(826, 833);
+                    key = "Q";
                     break;
+
                 case 2:
-                    coords = new Point(875, 833);
+                    key = "W";
                     break;
+
                 case 3:
-                    coords = new Point(917, 833);
+                    key = "E";
                     break;
+
                 case 4:
-                    coords = new Point(967, 833);
+                    key = "R";
                     break;
-                default:
-                    Logger.Write("Unknown spell indice :" + indice, MessageState.WARNING);
-                    return;
+
             }
 
-            InputHelper.LeftClick(coords.X, coords.Y);
+            InputHelper.PressKey("LCTRL");
+            InputHelper.PressKey(key);
+            InputHelper.ReleaseKey("LCTRL");
+            InputHelper.ReleaseKey(key);
             BotHelper.InputIdle();
         }
         public int getLevel()
