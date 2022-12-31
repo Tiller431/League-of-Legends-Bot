@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install Visual Studio Build Tools
-        uses: microsoft/setup-visualstudio@v1
+        uses: microsoft/setup-msbuild@v1.0.2
         with:
           vs-version: 2019
       - name: Build solution
